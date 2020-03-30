@@ -320,7 +320,7 @@
           <h1>Hire Me</h1>
           <hr/>
         </div>
-        <form class="contact-form" method="POST">
+        <form name="contactform" class="contact-form" method="POST">
           <div class="row">
             <div class="column leftCol">
               <label for="fname">First Name</label>
@@ -355,7 +355,7 @@
           </div>
 
             <div style="text-align:center;">  
-              <button name="contactPost" type="submit" style="font-size: large;" ng-click="submit();">Send</button>
+              <button name="contactPost" type="submit" style="font-size: large;" ng-click="submit(contactform.$valid);">Send</button>
               </div>
         </form>
       </div>
