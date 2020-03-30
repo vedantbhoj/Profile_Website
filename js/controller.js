@@ -16,8 +16,11 @@ resumeApp.controller('resumeCtrl', function($scope, $http) {
       function(data){
         $scope.response = data;
         $scope.form = {};
-        alert("Thank you for showing interest in me!!");
-        console.log(data);
+        //alert("Thank you for showing interest in me!!");
+        if(data)
+        alert("Thank you for showing interest! Vedant Bhoj has been notified.");
+        else
+        alert("Something went wrong and Email was not sent!!");
       })
     .error(
       function(data){

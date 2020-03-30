@@ -95,7 +95,7 @@
           <li><a href="#top">ABOUT ME</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#timeline">TIMELINE</a></li>
-          <!-- <li><a href="#contactemail">HIRE ME</a></li> -->
+          <li><a href="#contactemail">HIRE ME</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li><a href="https://blogs.vedantbhoj.com">MY BLOG</a></li>
         </ul>
@@ -177,7 +177,7 @@
                 <i class="{{item.icon}}"></i>
               </a>
             </div>
-            <!--<span style="float: right;margin-top: 20px;">Total Page Visits: <?php echo $visits ?></span>-->
+            <span style="float: right;margin-top: 20px;">Total Page Visits: <?php echo $visits ?></span>
           </div>
         </div>
       </div>
@@ -314,7 +314,7 @@
 
     </div>
 
-    <!-- <div id="contactemail" class="section">
+    <div id="contactemail" class="section">
       <div class="container contact-container">
         <div style="text-align:center">
           <h1>Hire Me</h1>
@@ -340,8 +340,8 @@
               <input type="email" id="email" required="" name="email" ng-model="form.email" placeholder="Your Email Id">
             </div>
             <div class="column">
-              <label for="attachment">Attachment (if any)</label>
-              <input type="file" class="form-control" id="attachment" ng-model="form.attachment" name="attachment">
+              <!-- <label for="attachment">Attachment (if any)</label>
+              <input type="file" class="form-control" id="attachment" ng-model="form.attachment" name="attachment"> -->
             </div>
           </div>
 
@@ -359,7 +359,7 @@
               </div>
         </form>
       </div>
-    </div> -->
+    </div>
 
     <div id="contact">
       <br>
