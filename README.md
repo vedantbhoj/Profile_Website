@@ -1,5 +1,5 @@
 # Profile Website - https://vedantbhoj.com
-- This is a repository to my profile website hosted on a Linux OS with Apache 2.0.<br>
+- This is a repository to my profile website hosted on a Linux OS with Apache Server<br>
 - Used AngularJS.<br>
 - I created this portfolio in Fall 2018, and I keep on adding features to this.<br>
 - Email functionality added to send email with an attachment file.<br>
