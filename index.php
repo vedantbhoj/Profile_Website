@@ -107,6 +107,7 @@
   <div class="wrapper">
     <!--about pane-->
     <div id="about" class="section section-fixed">
+      <div id="particles-js"></div>
       <div id="titlecard" class="container vertically-center">
         <div class="row">
           <div class="col-lg-6 slideRight">
@@ -117,6 +118,12 @@
                 {{resume_data.personal_info.last_name | uppercase}}</h2>
               <h4 class="inverse-color">MS - {{resume_data.personal_info.position }}
                 <br>{{resume_data.personal_info.institute}}</h4>
+              <div style="display: -webkit-inline-box;" ng-repeat="(key, data) in resume_data.links">
+                <a title="{{key}}" ng-repeat="item in data" class="no-decoration social-links-top" href="{{item.link}}"
+                  target="_blank">
+                  <i class="{{item.icon}}"></i>
+                </a>
+              </div>
               <hr>
               <h3 class="inverse-color pulse">
                 <span class="rotate">DEVELOPER, ENGINEER, CREATOR, DESIGNER</span>
@@ -181,7 +188,7 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
     <!--skills pane-->
     <div id="skills" class="section">
       <div class="container">
@@ -279,7 +286,7 @@
         </div>
         </br>
       </div>
-    </div>
+  </div>
 
 
     <!--timeline pane-->
@@ -312,8 +319,8 @@
         </ul>
       </div>
 
-    </div>
-
+  </div>
+     <!--hire me pane-->
     <div id="contactemail" class="section">
       <div class="container contact-container">
         <div style="text-align:center">
@@ -359,8 +366,8 @@
               </div>
         </form>
       </div>
-    </div>
-
+  </div>
+    <!--contact pane-->
     <div id="contact">
       <br>
     </div>
@@ -378,5 +385,6 @@
   <script src="js/scriptPolarClock.js"></script>
 
 </body>
-
+<script src="js/particle.js"></script>
+<script src="js/particles_app.js"></script>
 </html>
