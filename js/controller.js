@@ -58,10 +58,10 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
         "icon": "fab fa-github"
       }
       ],
-      // "YouTube": [{"link" : "https://www.youtube.com/channel/UCcHcNTnEa-y-IeXqT5q8JrA",
-      // "icon" : "fab fa-youtube"
-      // }
-      // ],
+      "YouTube": [{"link" : "https://www.youtube.com/channel/UCcHcNTnEa-y-IeXqT5q8JrA",
+      "icon" : "fab fa-youtube"
+      }
+      ],
       "Instagram": [{
         "link": "https://www.instagram.com/vedant.bhoj",
         "icon": "fab fa-instagram"
