@@ -35,7 +35,7 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
     "personal_info": {
       "first_name": "Vedant Rajay",
       "last_name": "Bhoj",
-      "resume_link": "res/resume/Vedant%20Rajay%20Bhoj%20Resume.pdf",
+      "resume_link": "res/resume/Vedant Rajay Bhoj Resume.pdf",
       "position": "Computer Engineering",
       "institute": "San Jose State University",
       "email": [
