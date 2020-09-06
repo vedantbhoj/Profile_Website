@@ -1,29 +1,3 @@
-<?php
-	$servername = "bhojvedant2844138.ipagemysql.com";
-        $username = "vedantbhoj";
-        $password = "vedantbhoj";
-        $dbname = "portfolio_vedant";
-        $conn =  mysqli_connect($servername, $username, $password, $dbname);
-
-		if ($conn->connect_error) {
-    		die("Connection failed: " . $conn->connect_error);
-    		return NULL;
-		} 
-
-         $sql = "UPDATE Counter SET visits = visits+1 WHERE id = 1";
-         $result = mysqli_query($conn, $sql);
-         $sql = "SELECT visits FROM Counter WHERE id = 1";
-         $result = mysqli_query($conn, $sql);
-
-	 if ($result->num_rows > 0) {
-        while($row = $result->fetch_assoc()) {
-            $visits = $row["visits"];
-        }
-    } else {
-        echo "no data";
-    }
-?>
-
 <!DOCTYPE html>
 <html ng-app="resumeApp">
 
@@ -32,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
-    content="I am currently pursuing a Masters of Science in Computer Engineering at San Jose State University, California. I completed my under graduation from Vishwakarma Institute of Information Technology, Pune, India with a Bachelor's degree in Electronics and Telecommunication Engineering. My primary areas of interest include Web Development, Data Engineering and Computer Networks. I have 3 years of experience as a Programmer Analyst at Cognizant where I developed and maintained multi-layered web applications for the IT security teams. Currently interning at a Health Care startup as a Full Stack Engineer. I am proficient in JavaScript, C# and have worked with C, JAVA, MATLAB and Python before. I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like Angular and ReactJS. Additionally, I have experience developing ETL data pipeline and backend.">
+    content="I am passionate Web Developer with Masters in Computer Engineering from San Jose State University, California (Class of 2020). My primary areas of interest include Web UI and Full Stack Engineering. I have 3+ years of total experience as a Programmer Analyst at Cognizant where I developed and maintained multi-layered web applications for the IT security teams. I also interned at a Health Care startup as a Full Stack Engineer. I am proficient in web technologies like JavaScript, Node.js and have worked with C#, JAVA, MATLAB and Python before. I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like AngularJS and ReactJS. Additionally, I have experience developing backend and data engineering.">
   <meta name="Keywords"
     content="SJSU, San Jose State University, Masters, Graduate, Web Development, Full Stack, Software Engineer, Computer Science, React, JavaScript, HTML, CSS">
   <title>Vedant Bhoj</title>
@@ -53,7 +27,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js"></script>
-
+  <script type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-sanitize.js"></script>
   <script src="js/controller.js"></script>
   <script src="js/jquery.simple-text-rotator.min.js"></script>
   <script src="js/main.js"></script>
@@ -95,9 +70,9 @@
           <li><a href="#top">ABOUT ME</a></li>
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#timeline">TIMELINE</a></li>
-          <li><a href="#contactemail">HIRE ME</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-          <li><a href="https://blogs.vedantbhoj.com">MY BLOG</a></li>
+          <li><a href="#recommendations">ENDORSEMENTS</a></li>
+          <!-- <li><a href="#contact">CONTACT</a></li>
+          <li><a href="https://blogs.vedantbhoj.com">MY BLOG</a></li> -->
         </ul>
       </div>
     </div>
@@ -134,20 +109,22 @@
             <div class="container-fluid">
               <h1 class="super-heading inverse-color">Hi,</h1>
               <h4 class="inverse-color text-justify">
-                I am currently pursuing a Masters in Computer Engineering, (MAY 2020) at San Jose State University,
-                California. My primary areas of interest include Web Application Development, Full Stack Engineering.
+                I am an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University.
+                My primary areas of interest include Full Stack Engineering & Web Application Development.
                 <br>
                 <br>
-                I have 3+ years of experience as a Software Engineer (Programmer Analyst) at Cognizant, India where I
-                developed and maintained multi-layered web applications for the IT security teams. I have interned at a
-                Health Care startup as a Full Stack Engineer in Silicon Valley.
+                Currently, I work at a Healthcare startup in Silicon Valley, CA as an Associate Software Engineer where
+                I design & develop on the data analytics platform with a focus on full-stack engineering and UI/UX.
+                I also have 3 years of experience as a Software Engineer at Cognizant, India where I developed and
+                maintained multi-layered web applications for the IT security teams.
                 <br>
                 <br>
-                I am proficient in web technologies based on JavaScript and have worked with C#, JAVA, and Python
-                before. I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know
-                frameworks like Angular and ReactJS.
-                Additionally, I have experience in writing SQL queries and backend.
+                I am proficient in web technologies and have worked on C#, JAVA and Python as well. I enjoy developing
+                web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like Angular and React.
+                Additionally, I have experience in writing SQL queries and backend API's.
                 <br>
+                <br>
+                I love eating and cooking delicious food 🍜
               </h4>
             </div>
           </div>
@@ -188,7 +165,7 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
     <!--skills pane-->
     <div id="skills" class="section">
       <div class="container">
@@ -286,9 +263,7 @@
         </div>
         </br>
       </div>
-  </div>
-
-
+    </div>
     <!--timeline pane-->
     <div id="timeline" class="section">
       <div class="container">
@@ -307,7 +282,9 @@
               </div>
               <div class="tl-body">
                 <br>
-                <p ng-repeat="line in item.desc">- {{line}}</p>
+                <div ng-repeat="line in item.desc">
+                  <p ng-bind-html="line"></p>
+                </div>
               </div>
               <div class="tl-heading" ng-if="item.link">
                 <h5><a style="font-family: cursive; text-decoration: underline;" href="{{item.link}}"
@@ -319,54 +296,37 @@
         </ul>
       </div>
 
-  </div>
-     <!--hire me pane-->
-    <div id="contactemail" class="section">
-      <div class="container contact-container">
-        <div style="text-align:center">
-          <h1>Hire Me</h1>
-          <hr/>
-        </div>
-        <form name="contactform" class="contact-form" method="POST">
-          <div class="row">
-            <div class="column leftCol">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" required="" name="firstname" ng-model="form.firstname" placeholder="Your name..">
-            </div>
+    </div>
 
-            <div class="column">
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" required="" name="lastname" ng-model="form.lastname" placeholder="Your last name..">
-            </div>
-          </div>
-
-
-          <div class="row">
-            <div class="column leftCol">
-              <label for="email">Email ID</label>
-              <input type="email" id="email" required="" name="email" ng-model="form.email" placeholder="Your Email Id">
-            </div>
-            <div class="column">
-              <!-- <label for="attachment">Attachment (if any)</label>
-              <input type="file" class="form-control" id="attachment" ng-model="form.attachment" name="attachment"> -->
-            </div>
-          </div>
-
-
-          <div class="row">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" required="" ng-model="form.subject" placeholder="Subject">
-
-            <label for="message">Message Me</label>
-            <textarea id="message" name="message" required="" ng-model="form.message"  placeholder="Write something..."></textarea>
-          </div>
-
-            <div style="text-align:center;">  
-              <button name="contactPost" type="submit" style="font-size: large;" ng-click="submit(contactform.$valid);">Send</button>
+    <!--recommendations pane-->
+    <div id="recommendations" class="section">
+      <div class="container">
+        <h1>Endorsements</h1>
+        <hr>
+      <ul class="section-info" tabindex="-1">
+        <li id="ember1110" ng-repeat="(person, data) in resume_data.endorsements" class="pv-recommendation-entity ember-view">
+          <div id="{{person}}" class="pv-recommendation-entity__header">
+            <a data-control-name="recommendation_details_profile" href="{{data[0].linkedIn_URL}}" id="ember1111"
+              class="pv-recommendation-entity__member ember-view"> 
+              <img src="{{data[0].image}}" loading="lazy" width="110" height="110" alt="{{person}}"  class="EntityPhoto-circle-4 fl lazy-image ember-view">
+            <div class="pv-recommendation-entity__detail">
+                <h3 class="t-16 t-black t-bold">{{data[0].name}}</h3>
+                <p class="pv-recommendation-entity__headline t-14 t-black t-normal pb1" ng-bind-html="data[0].title" ></p>
+                <p class="t-12 t-black--light t-normal">{{data[0].date_association}} at<br>{{data[0].endorsed_for_company}}</p>
               </div>
-        </form>
+            </a></div>
+          <div class="pv-recommendation-entity__highlights">
+            <blockquote class="pv-recommendation-entity__text relative">
+              <div id="ember1113" class="ember-view"> <span class="lt-line-clamp__raw-line">{{data[0].quote}}</span>
+
+                </div>
+            </blockquote>
+          </div>
+        </li>
+      </ul>
       </div>
-  </div>
+    </div>
+
     <!--contact pane-->
     <div id="contact">
       <br>
@@ -387,4 +347,5 @@
 </body>
 <script src="js/particle.js"></script>
 <script src="js/particles_app.js"></script>
+
 </html>

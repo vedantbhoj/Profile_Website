@@ -26,7 +26,7 @@ $fromName = 'Vedant Bhoj';
 $subject = 'Thank you for contacting Vedant Bhoj'; 
 
 //attachment file path
-$file = "Vedant Bhoj_Resume.pdf";
+$file = "Vedant Rajay Bhoj Resume.pdf";
 
 //email body content
 $htmlContent = 'Thank you for contacting me. <br> Attached is my Resume.<br> Vedant Bhoj <br> Phone: +1(669)220-9769 <br>Email: bhoj.vedant28@gmail.com';

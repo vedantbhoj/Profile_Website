@@ -1,4 +1,4 @@
-var resumeApp = angular.module('resumeApp', ["ui.bootstrap"]);
+var resumeApp = angular.module('resumeApp', ["ui.bootstrap", "ngSanitize"]);
 resumeApp.controller('resumeCtrl', function ($scope, $http) {
 
   $scope.form = {
@@ -67,9 +67,9 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
         "icon": "fab fa-instagram"
       }
       ],
-      "Wordpress": [{
-        "link": "https://blogs.vedantbhoj.com/",
-        "icon": "fab fa-wordpress"
+      "Twitter": [{
+        "link": "https://twitter.com/28_vedant",
+        "icon": "fab fa-twitter"
       }
       ]
     },
@@ -130,15 +130,64 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
       "Web CMS"
     ],
     "timeline": {
-      "FEB 2020 - Present": [
+
+      "JUL 2020 - PRESENT": [
         {
           "type": "Work",
-          "title": "Student Assistant Web Designer at SJSU",
+          "title": "Associate Software Engineer at Health Level Inc.",
           "desc": [
-            "Migrating, designing and overhauling university departmental websites to support new responsive design."
+            "Engineering on the data analytics platform to design and implement software and data analysis modules to answer business questions, with a focus on full-stack engineering and user experience."
+          ],
+          "link": "https://www.healthlevel.com",
+          "link_desc": "HealthLevel Inc."
+        }
+      ],
+
+      "JUN 2020": [
+        {
+          "type": "Project",
+          "title": "MEAN Stack Salary Calculator for HR",
+          "desc": [
+            "HR web application using MEAN stack. The application allows you to enter employee names, salary information, deductions, and perform some calculations for their pay based on the information input."
+          ],
+          "link": "https://github.com/vedantbhoj/MEAN-HR",
+          "link_desc": "HR App GitHub Repo"
+        }
+      ],
+
+      "FEB 2020 - MAY 2020": [
+        {
+          "type": "Work",
+          "title": "Web Developer at SJSU",
+          "desc": [
+            "Migrating, designing and overhauling university departmental websites to support new design."
           ],
           "link": "https://www.sjsu.edu/",
           "link_desc": "SJSU website"
+        }
+      ],
+      
+      "JAN 2020 - MAY 2020": [
+        {
+          "type": "Project",
+          "title": "Blockchain Based Vehicle Information Management System (Research Paper Under Review)",
+          "desc": [
+            "Technology stack: (Node.js, React.js, Express, AWS, Ethereum, Truffle, Web3.js, Chart.js, REST API, NoSQL) End to end Car Management with service prediction using MERN stack. Blockchain and Data Analytics to improve security and efficiency. Ethereum is being used for security and decentralized platform for implementing Blockchain"
+          ],
+          "link": "https://www.youtube.com/watch?v=EmloBPuF9ss",
+          "link_desc": "Watch Elevator Pitch"
+        }
+      ],
+
+      "APR 2020": [
+        {
+          "type": "Project",
+          "title": "The Pandemic Chronicles - Data Visualization",
+          "desc": [
+            "Technology stack: (Node.js, React.js, Express, Docker, Chart.js, AmCharts, Google Charts, REST API, NoSQL) The application is a repository for pandemic information for the past ten years. Provision to explore, compare and visualize data to learn and fight the current situation."
+          ],
+          "link": "https://github.com/vedantbhoj/pandemic-chronicles",
+          "link_desc": "GitHub Repo"
         }
       ],
 
@@ -147,9 +196,9 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
           "type": "Work",
           "title": "Software Engineering Intern at HealthLevel Inc.",
           "desc": [
-            "Full Stack Engineering on a data analytics platform used by various hospitals across the United States.",
-            "Working extensively on the ETL data pipeline to streamline the onboarding process for new customers.",
-            "Consuming API’s to support the mobile app based on Ionic framework."
+            "Full Stack Engineering on a data analytics platform used by various healthcare institutes across the United States.",
+            "Worked extensively on the core product to add features and improve the overall user experience",
+            "Developed end to end functionalities by writing Stored Procedures, consuming API’s and buiding responsive UI reports."
           ],
           "link": "https://www.healthlevel.com/",
           "link_desc": "HealthLevel Inc."
@@ -178,8 +227,8 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
             "Google and Facebook sign-in integration. Product sorting and filtering based on rating and view count.",
             "Based on CURL calls to access remote company's data and integrate into the common market place."
           ],
-          "link": "https://www.youtube.com/watch?v=dT2U4Y_pgFk",
-          "link_desc": "Project Demo"
+          "link": "https://marktplatz.vedantbhoj.com",
+          "link_desc": "View Project"
         },
         {
           "type": "Project",
@@ -231,35 +280,20 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
           "link_desc": "See Award"
         }
       ],
-      "JUN 2017": [
+      "FEB 2016 - JUN 2017": [
         {
           "type": "Project",
-          "title": "Smart Card Access Management System (Cognizant)",
+          "title": "Projects at Cognizant",
           "desc": [
+            "<b>Smart Card Access Management</b>",
             "This application allows the associates to raise access requests to the ODC/common doors of the workplace.",
             "Enhanced the web services to handle multiple city/location short term access requests which drastically reduced the processing time and ticket volume by 70%.",
-            "Created web-services and batch jobs to issue, activate or deactivate cards based on clients, designations and access locations across all the facilities in India."
-          ],
-          "link": ""
-        }
-      ],
-      "AUG 2016": [
-        {
-          "type": "Project",
-          "title": "Spam Reporting Tool (Cognizant)",
-          "desc": [
+            "Created web-services and batch jobs to issue, activate or deactivate cards based on clients, designations and access locations across all the facilities in India.",
+            "<b>Spam Reporting Tool</b>",
             "This application automated the manual task of analysing the reported spams and notifying the associates.",
             "Implemented a visualization dashboard for spam trend with Canvas.js. Also, developed a functionality to send out email notifications to the associates and specific groups using LDAP.",
-            "Developed a Microsoft Outlook plugin to send the reported suspicious emails to a service account."
-          ],
-          "link": ""
-        }
-      ],
-      "FEB 2016": [
-        {
-          "type": "Project",
-          "title": "Cyber Security Incident Reporting Tool (Cognizant)",
-          "desc": [
+            "Developed a Microsoft Outlook plugin to send the reported suspicious emails to a service account.",
+            "<b>Cyber Security Incident Reporting Tool</b>",
             "Cybersecurity team uses this application to log and track network security incidents across the organization.",
             "Developed a dashboard to track the active incidents, thus improving incident response time.",
             "Created a Batch Job to send automated two way 1-Click communication emails at specific time intervals."
@@ -320,6 +354,58 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
           "link_desc": "Watch DEMO"
         }
       ]
+    },
+    "endorsements":{
+      "sheryl_ehrman": [{
+        "linkedIn_URL": "https://www.linkedin.com/in/sheryl-ehrman-64483222/",
+        "image": "res/images/endorsers/sheryl_ehrman.jfif",
+        "name": "Sheryl Ehrman",
+        "title": "Dean of Engineering at San Jose State University",
+        "endorsed_for_company": "San Jose State University",
+        "date_association": "July 8, 2020, Sheryl worked with Vedant in different groups",
+        "quote": "I came to know Vedant through our SJSU Engineering Go program. I think he is a great representative of our graduate programs at SJSU. His interests lie in software engineering and web development. He is very keen to be a part of an enterprise that takes environmental and healthcare issues and provides solutions in an innovative way that would take a client focused approach to problem solving. From our interactions, I can see that he adapts well to different cultures, and he takes advantage of opportunities that are available to him. I think he would be an excellent team member, and he does have aspirations to strike out on his own as an entrepreneur someday."
+      }
+      ],
+      "gordon_douglas": [{
+        "linkedIn_URL": "https://www.linkedin.com/in/gccdouglas/",
+        "image": "res/images/endorsers/gordon_douglas.jfif",
+        "name": "Gordon Douglas",
+        "title": "Director, Institute for Metropolitan Studies<br>Dept. of Urban & Regional Planning",
+        "endorsed_for_company": "San Jose State University",
+        "date_association": "May 23, 2020, Gordon managed Vedant directly",
+        "quote": "Vedant Bhoj is a highly talented, reliable, and easy-going person. It was an enormous benefit to our department to have his careful and knowledgeable assistance in the complete (top-to-bottom) redesign of our website to reflect merged programs and changing priorities within the framework for a completely new style template and CMS that we had to work with. He was full of design ideas and innovative work-arounds to make the site do what we wanted within the constraints and to make our programs appear as their best. Vedant is also a kind and personable colleague; it was a pleasure to work with him. I am happy to serve as a reference and I would strongly recommend him to any potential employers and future colleagues."
+      }
+      ],
+      "adway_lele": [{
+        "linkedIn_URL": "https://www.linkedin.com/in/adway-lele/",
+        "image": "res/images/endorsers/adway_lele.jfif",
+        "name": "Adway Lele",
+        "title": "Senior Software Engineer at Health Level Inc.",
+        "endorsed_for_company": "Health Level Inc.",
+        "date_association": " January 8, 2020, Adway managed Vedant directly",
+        "quote": "I had opportunity to work with Vedant for 3 months of summer and a bit more. Vedant took responsibility of his modules and finished them efficiently. He immediately bought into HealthLevel's processes and was compliant through and through. He documented his proposals and modules meticulously. over all, it was a pleasure working with him. "
+      }
+      ],
+      "pradeep_kp": [{
+        "linkedIn_URL": "https://www.linkedin.com/in/pradeep-k-p-a2b1778/",
+        "image": "res/images/endorsers/pradeep_kp.jfif",
+        "name": "Pradeep K.P",
+        "title": "Project Manager at Cognizant",
+        "endorsed_for_company": "Cognizant Technology Solutions",
+        "date_association": "July 16, 2019, Pradeep managed Vedant directly",
+        "quote": "Vedant was an excellent team player. He had played a major role in developing new enhancements in maintenance applications and developing applications from scratch. He owns the task assigned to him and is capable to successfully drive the same to closure. He ensured to deliver quality products. He have good analytical skills and capable enough to implement apt solution for the problems. He is capable to work independently and able to support team members for complex problems. He always thrives to study new technologies and implement it in applications where ever possible. Wishing him all the best for his higher studies and future endeavors."
+      }
+      ],
+      "ketan_rudrurkar": [{
+        "linkedIn_URL": "https://www.linkedin.com/in/ketanrudrurkar/",
+        "image": "res/images/endorsers/ketan_rudrurkar.jfif",
+        "name": "Ketan Rudrurkar",
+        "title": "Software Development Engineer at Amazon",
+        "endorsed_for_company": "San Jose State University",
+        "date_association": "July 4, 2020, Vedant worked with Ketan in the same group",
+        "quote": "I had an opportunity to observe Vedant Bhoj closely as a team member on several of my projects during my Master's degree, including my final Master's Project. I found Vedant to be pro-active, innovative, and a team player who blends well with the team and is helpful whenever needed. Vedant has always been respectful and open to the views, feedbacks, and inputs from other team members as well which helped in creating room for further improvements and modifications in several aspects of the projects. Above all, I feel Vedant is an excellent human being who is friendly and thinks about the people around him. Any team would be lucky to have him by their side."
+      }
+      ],
     }
   };
   $scope.previous = 0;
