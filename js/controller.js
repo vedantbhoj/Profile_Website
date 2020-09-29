@@ -227,7 +227,7 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
             "Google and Facebook sign-in integration. Product sorting and filtering based on rating and view count.",
             "Based on CURL calls to access remote company's data and integrate into the common market place."
           ],
-          "link": "https://marktplatz.vedantbhoj.com",
+          "link": "https://marktplatz.herokuapp.com/",
           "link_desc": "View Project"
         },
         {
