@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
     content="I am passionate Web Developer with Masters in Computer Engineering from San Jose State University, California (Class of 2020). My primary areas of interest include Web UI and Full Stack Engineering. I have 3+ years of total experience as a Programmer Analyst at Cognizant where I developed and maintained multi-layered web applications for the IT security teams. I also interned at a Health Care startup as a Full Stack Engineer. I am proficient in web technologies like JavaScript, Node.js and have worked with C#, JAVA, MATLAB and Python before. I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like AngularJS and ReactJS. Additionally, I have experience developing backend and data engineering.">
@@ -22,7 +22,7 @@
   <link rel="icon" href="res/images/page_icon.png">
 
   <!--scripts-->
-  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular.min.js"></script>
@@ -355,21 +355,21 @@
           </div>
           <div class="col-md-4">
             <h3>GitHub</h3>
-            <div class="row">
+            <div class="row" style="margin: -25px 0 -25px 0;">
               <a href="https://github.com/vedantbhoj">
                 <img height="200" width="350"
                   src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedantbhoj&hide=php&layout=compact" />
               </a>
             </div>
 
-            <div class="row">
+            <div class="row" style="margin: -25px 0 -25px 0;">
               <a href="https://github.com/vedantbhoj">
                 <img width="350" height="200"
                   src="https://github-readme-stats.vercel.app/api?username=vedantbhoj&count_private=true&show_icons=true&title_color=fc5200&text_color=333&icon_color=000&bg_color=fff&line_height=25" />
               </a>
             </div>
-            <div class="row">
-              <a class="twitter-timeline" data-width="350" data-height="200" data-theme="light" href="https://twitter.com/28_vedant?ref_src=twsrc%5Etfw">Tweets by 28_vedant</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="row" style="text-align: center;">
+              <a class="twitter-timeline" data-width="350" data-height="320" data-theme="light" href="https://twitter.com/28_vedant?ref_src=twsrc%5Etfw">Tweets by 28_vedant</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
           </div>
 

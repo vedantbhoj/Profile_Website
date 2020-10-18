@@ -489,6 +489,10 @@ input[type=submit]:hover {
         text-align: center;
     }
 
+    .twitter-timeline {
+        height: 100vw !important;
+    }
+
 }
 
 #message {
