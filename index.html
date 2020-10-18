@@ -71,6 +71,7 @@
           <li><a href="#skills">SKILLS</a></li>
           <li><a href="#timeline">TIMELINE</a></li>
           <li><a href="#recommendations">ENDORSEMENTS</a></li>
+          <li><a href="#facts">FUN STATS</a></li>
           <!-- <li><a href="#contact">CONTACT</a></li>
           <li><a href="https://blogs.vedantbhoj.com">MY BLOG</a></li> -->
         </ul>
@@ -303,27 +304,77 @@
       <div class="container">
         <h1>Endorsements</h1>
         <hr>
-      <ul class="section-info" tabindex="-1">
-        <li id="ember1110" ng-repeat="(person, data) in resume_data.endorsements" class="pv-recommendation-entity ember-view">
-          <div id="{{person}}" class="pv-recommendation-entity__header">
-            <a data-control-name="recommendation_details_profile" href="{{data[0].linkedIn_URL}}" id="ember1111"
-              class="pv-recommendation-entity__member ember-view"> 
-              <img src="{{data[0].image}}" loading="lazy" width="110" height="110" alt="{{person}}"  class="EntityPhoto-circle-4 fl lazy-image ember-view">
-            <div class="pv-recommendation-entity__detail">
-                <h3 class="t-16 t-black t-bold">{{data[0].name}}</h3>
-                <p class="pv-recommendation-entity__headline t-14 t-black t-normal pb1" ng-bind-html="data[0].title" ></p>
-                <p class="t-12 t-black--light t-normal">{{data[0].date_association}} at<br>{{data[0].endorsed_for_company}}</p>
-              </div>
-            </a></div>
-          <div class="pv-recommendation-entity__highlights">
-            <blockquote class="pv-recommendation-entity__text relative">
-              <div id="ember1113" class="ember-view"> <span class="lt-line-clamp__raw-line">{{data[0].quote}}</span>
+        <ul class="section-info" tabindex="-1">
+          <li id="ember1110" ng-repeat="(person, data) in resume_data.endorsements"
+            class="pv-recommendation-entity ember-view">
+            <div id="{{person}}" class="pv-recommendation-entity__header">
+              <a data-control-name="recommendation_details_profile" href="{{data[0].linkedIn_URL}}" id="ember1111"
+                class="pv-recommendation-entity__member ember-view">
+                <img src="{{data[0].image}}" loading="lazy" width="110" height="110" alt="{{person}}"
+                  class="EntityPhoto-circle-4 fl lazy-image ember-view">
+                <div class="pv-recommendation-entity__detail">
+                  <h3 class="t-16 t-black t-bold">{{data[0].name}}</h3>
+                  <p class="pv-recommendation-entity__headline t-14 t-black t-normal pb1" ng-bind-html="data[0].title">
+                  </p>
+                  <p class="t-12 t-black--light t-normal">{{data[0].date_association}}
+                    at<br>{{data[0].endorsed_for_company}}</p>
+                </div>
+              </a></div>
+            <div class="pv-recommendation-entity__highlights">
+              <blockquote class="pv-recommendation-entity__text relative">
+                <div id="ember1113" class="ember-view"> <span class="lt-line-clamp__raw-line">{{data[0].quote}}</span>
 
                 </div>
-            </blockquote>
+              </blockquote>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="facts" class="section">
+      <div class="container">
+        <h1>Fun Stats - About Me</h1>
+        <hr>
+        <div class="row stats-row">
+          <div class="col-md-4">
+            <h3>Running</h3>
+            <div class="row">
+              <iframe height='160' width='300' frameborder='0' allowtransparency='true' scrolling='no'
+                src='https://www.strava.com/athletes/64076709/activity-summary/6915282591d0ef55e0ec369675331f1ef35ff17b'></iframe>
+            </div>
+            <div class="row">
+              <iframe height='500' width='300' frameborder='0' allowtransparency='true' scrolling='yes'
+                src='https://www.strava.com/athletes/64076709/latest-rides/6915282591d0ef55e0ec369675331f1ef35ff17b'></iframe>
+            </div>
           </div>
-        </li>
-      </ul>
+          <div class="col-md-4">
+            <h3>Spotify Playlist</h3>
+            <iframe src="https://open.spotify.com/embed/playlist/1mtETWxPq2toMoResmso4I" width="300" height="620"
+              frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+          <div class="col-md-4">
+            <h3>GitHub</h3>
+            <div class="row">
+              <a href="https://github.com/vedantbhoj">
+                <img height="200" width="350"
+                  src="https://github-readme-stats.vercel.app/api/top-langs/?username=vedantbhoj&hide=php&layout=compact" />
+              </a>
+            </div>
+
+            <div class="row">
+              <a href="https://github.com/vedantbhoj">
+                <img width="350" height="200"
+                  src="https://github-readme-stats.vercel.app/api?username=vedantbhoj&count_private=true&show_icons=true&title_color=fc5200&text_color=333&icon_color=000&bg_color=fff&line_height=25" />
+              </a>
+            </div>
+            <div class="row">
+              <a class="twitter-timeline" data-width="350" data-height="200" data-theme="light" href="https://twitter.com/28_vedant?ref_src=twsrc%5Etfw">Tweets by 28_vedant</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </div>
 
@@ -342,10 +393,10 @@
     </div>
   </div>
 
-  <script src="js/scriptPolarClock.js"></script>
 
 </body>
 <script src="js/particle.js"></script>
 <script src="js/particles_app.js"></script>
+<!-- <script src="js/scriptPolarClock.js"></script> -->
 
 </html>

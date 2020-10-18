@@ -181,6 +181,15 @@ MAIN PAGE STYLINGS
     padding-bottom: 70px;
 }
 
+
+#facts {
+    border-top: 2px solid #eee;
+    padding-top: 70px;
+    background: white;
+    box-shadow: 0 5px 5px -5px black;
+    padding-bottom: 70px;
+}
+
 #contactemail {
     border-top: 2px solid #eee;
     padding-top: 70px;
@@ -475,17 +484,29 @@ input[type=submit]:hover {
     .leftCol {
         padding-right: 0px;
     }
+
+    .stats-row{
+        text-align: center;
+    }
+
 }
 
 #message {
     height: 150px;
 }
 
+@media only screen and (max-width: 1000px) {
+    .stats-row{
+        text-align: center;
+    }
+}
 
 
 /*Recommendations CSS- starts*/
 
 @media only screen and (max-width: 600px) {
+
+
     body .pv-recommendation-entity__header {
         width: 100%;
         text-align: center;
