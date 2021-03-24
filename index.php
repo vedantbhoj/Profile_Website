@@ -115,7 +115,7 @@
                 <br>
                 <br>
                 Currently, I work at a Healthcare startup in Silicon Valley, CA as an Associate Software Engineer where
-                I design & develop on the data analytics platform with a focus on full-stack engineering and UI/UX.
+                I design & develop on the data analytics platform with a focus on full-stack platform engineering and UI/UX.
                 I also have 3 years of experience as a Software Engineer at Cognizant, India where I developed and
                 maintained multi-layered web applications for the IT security teams.
                 <br>

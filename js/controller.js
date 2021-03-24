@@ -134,9 +134,11 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
       "JUL 2020 - PRESENT": [
         {
           "type": "Work",
-          "title": "Associate Software Engineer at Health Level Inc.",
+          "title": "Software Engineer (Full Stack - Data Platform) at Health Level Inc.",
           "desc": [
-            "Engineering on the data analytics platform to design and implement software and data analysis modules to answer business questions, with a focus on full-stack engineering and user experience."
+            "User friendly business analytics that aligns physicians and administrators to make evidence-based decisions to improve hospital and department operations and clinical outcomes.",
+            "Drove improvements in operational practices through innovative solution to existing problems, automation and reduce operational cost.",
+            "Designed and engineered data analytics modules to answer business questions, with a focus on full-stack engineering and user experience."
           ],
           "link": "https://www.healthlevel.com",
           "link_desc": "HealthLevel Inc."
@@ -286,15 +288,12 @@ resumeApp.controller('resumeCtrl', function ($scope, $http) {
           "title": "Projects at Cognizant",
           "desc": [
             "<b>Smart Card Access Management</b>",
-            "This application allows the associates to raise access requests to the ODC/common doors of the workplace.",
             "Enhanced the web services to handle multiple city/location short term access requests which drastically reduced the processing time and ticket volume by 70%.",
             "Created web-services and batch jobs to issue, activate or deactivate cards based on clients, designations and access locations across all the facilities in India.",
             "<b>Spam Reporting Tool</b>",
-            "This application automated the manual task of analysing the reported spams and notifying the associates.",
             "Implemented a visualization dashboard for spam trend with Canvas.js. Also, developed a functionality to send out email notifications to the associates and specific groups using LDAP.",
             "Developed a Microsoft Outlook plugin to send the reported suspicious emails to a service account.",
             "<b>Cyber Security Incident Reporting Tool</b>",
-            "Cybersecurity team uses this application to log and track network security incidents across the organization.",
             "Developed a dashboard to track the active incidents, thus improving incident response time.",
             "Created a Batch Job to send automated two way 1-Click communication emails at specific time intervals."
           ],

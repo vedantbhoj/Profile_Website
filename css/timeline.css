@@ -47,7 +47,7 @@
 .timeline li .timeline-panel {
     width: 46%;
     float: left;
-    background: #ffecec;
+    background: #b3eefc85;
     border: 1px solid #050505;
     padding: 20px;
     position: relative;
@@ -71,10 +71,10 @@
     top: 27px;
     right: -14px;
     display: inline-block;
-    border-top: 14px solid transparent;
+    /* border-top: 14px solid transparent;
     border-left: 14px solid #ffecec;
     border-right: 0 solid #ffecec;
-    border-bottom: 14px solid transparent;
+    border-bottom: 14px solid transparent; */
     content: " ";
 }
 .timeline li .timeline-panel.noarrow:before, .timeline li .timeline-panel.noarrow:after {
