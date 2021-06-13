@@ -6,9 +6,9 @@
   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="Description"
-    content="I am passionate Web Developer with Masters in Computer Engineering from San Jose State University, California (Class of 2020). My primary areas of interest include Web UI and Full Stack Engineering. I have 3+ years of total experience as a Programmer Analyst at Cognizant where I developed and maintained multi-layered web applications for the IT security teams. I also interned at a Health Care startup as a Full Stack Engineer. I am proficient in web technologies like JavaScript, Node.js and have worked with C#, JAVA, MATLAB and Python before. I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like AngularJS and ReactJS. Additionally, I have experience developing backend and data engineering.">
+    content="Vedant Bhoj is an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University. He works at HealthLevel in Mountain View, California as a Full Stack Data Engineer.">
   <meta name="Keywords"
-    content="SJSU, San Jose State University, Masters, Graduate, Web Development, Full Stack, Software Engineer, Computer Science, React, JavaScript, HTML, CSS">
+    content="Full Stack, Data Engineer, Software Engineer, Computer Science, .NET, C#, JavaScript, SQL, OLTP, OLAP, SJSU, San Jose State University, Masters, Graduate, Web Development">
   <title>Vedant Bhoj</title>
 
   <!--stylesheets-->
