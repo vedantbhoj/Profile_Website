@@ -102,7 +102,7 @@
               </div>
               <hr>
               <h3 class="inverse-color pulse">
-                <span class="rotate">DEVELOPER, ENGINEER, CREATOR, DESIGNER</span>
+                  <span class="rotate">CREATOR, INFLUENCER, DESIGNER, DEVELOPER, ENGINEER</span>
               </h3>
             </div>
           </div>
@@ -110,19 +110,19 @@
             <div class="container-fluid">
               <h1 class="super-heading inverse-color">Hi,</h1>
               <h4 class="inverse-color text-justify">
-                I am an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University.
+              I am an experienced Software Engineer 👩‍💻 with a Masters degree 👨‍🎓 from San Jose State University.
                 My primary areas of interest include Full Stack Engineering & Web Application Development.
                 <br>
                 <br>
-                Currently, I work at a Healthcare startup in Silicon Valley, CA as an Associate Software Engineer where
-                I design & develop on the data analytics platform with a focus on full-stack platform engineering and UI/UX.
+                Currently, I work at a Healthcare startup in Silicon Valley, CA as Software Engineer where
+                I design and develop on the data analytics platform with a focus on full-stack engineering and UI/UX.
                 I also have 3 years of experience as a Software Engineer at Cognizant, India where I developed and
                 maintained multi-layered web applications for the IT security teams.
                 <br>
                 <br>
-                I am proficient in web technologies and have worked on C#, JAVA and Python as well. I enjoy developing
-                web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like Angular and React.
-                Additionally, I have experience in writing SQL queries and backend API's.
+                Aspiring Technical Product Manager, proficient in web technologies and have worked on C#, Java and Python as well. 
+                I enjoy developing web applications and I am skilled in HTML5, CSS, JavaScript and know frameworks like Angular and React.
+                Additionally, I have industry experience in writing SQL queries and backend API's.
                 <br>
                 <br>
                 I love eating and cooking delicious food 🍜
