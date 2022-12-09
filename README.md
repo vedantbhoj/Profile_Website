@@ -1,4 +1,4 @@
-# Profile Website - https://vedantbhoj.com
+# Profile Website - https://vedantbhoj.github.io/
 - This is a repository to my profile website hosted on a Linux OS with Apache Server<br>
 - Used AngularJS.<br>
 - I created this portfolio in Fall 2018, and I keep on adding features to this.<br>
